@@ -30,10 +30,53 @@ SMS → Android App → Flask API → ML Model → Database → Dashboard
 
 ---
 
+## 📂 Project Structure
+
+```
+smart-expense-tracker/
+│
+├── android-app/        # 📱 Mobile app (SMS reader + UI)
+├── backend/            # 🌐 Flask API (handles requests)
+│   ├── app.py
+│   ├── model.py
+│   ├── utils.py
+│   └── requirements.txt
+│
+├── ml-model/           # 🧠 ML training & dataset
+│   ├── train.py
+│   └── dataset.csv
+│
+├── docs/               # 📄 Screenshots, demo assets
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Run Locally
+
+```bash
+git clone https://github.com/yourusername/smart-expense-tracker.git
+cd smart-expense-tracker/backend
+pip install -r requirements.txt
+python app.py
+```
+
+---
+
 ## 🧪 Example
 
 **Input:** `"₹250 spent at Zomato"`
 **Output:** `Food`
+
+---
+
+## 🔥 Future Work
+
+* Bank API integration
+* Budget alerts
+* Spending prediction
 
 ---
 
